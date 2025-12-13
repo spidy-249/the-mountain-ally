@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mountain Ally | Authentic Journeys</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="logo">The Mountain Ally.</div>
+        <ul class="nav-links">
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#trips">Trips</a></li>
+            <li><a href="#journal">Journal</a></li>
+            <li><a href="#contact" class="btn-highlight">Plan Together</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+
+  <header class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="headline">Don't just tour. <br> <span class="accent-text">Belong.</span></h1>
+            <p class="sub-headline">I'm not your guide; I'm your mountain ally. From planning the route to the summit push, we do this together.</p>
+            <a href="#contact" class="btn-main">Start The Conversation</a>
+        </div>
+    </header>
+
+    <section id="philosophy" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Philosophy</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="philosophy-grid">
+                <div class="feature-box">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Friend, Not Guide</h3>
+                    <p>Guides point. Friends share. We eat together, struggle together, and celebrate together.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>Crafted by Hand</h3>
+                    <p>No templates. I build every itinerary from scratch based on your stamina and dreams.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-camera-retro"></i>
+                    <h3>Visual Stories</h3>
+                    <p>I document our journey. You go home with life changing memories, not just selfies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trips" class="section bg-offwhite">
+        <div class="container">
+            <div class="section-header">
+                <h2>Curated Experiences</h2>
+                <p>Ideas to get us started. Totally customizable.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1508766206392-8bd5cf550d1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="card-body">
+                        <span class="tag">Moderate</span>
+                        <h3>Dhotrey-Tumling Hike</h3>
+                        <p>4 Days | Sikkim </p>
+                        <a href="trip-hidden-valley.html" class="btn-text">View Itinerary &rarr;</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1516939884455-14a5cbe8eb68?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="card-body">
+                        <span class="tag">Moderate</span>
+                        <h3>Har Ki Dun</h3>
+                        <p>8 Days |  | Trekking</p>
+                        <a href="#contact" class="btn-text">Customize This &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="journal" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mountain Tales</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="card-body">
+                        <span class="tag">Philosophy</span>
+                        <h3>Why We Climb</h3>
+                        <p>It isn't about the summit. It's about who you become on the way up...</p>
+                        <a href="blog-why-we-climb.html" class="btn-text">Read Full Story &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container split-screen">
+            <div class="text-content">
+                <h2>Let's Plan Your Escape</h2>
+                <p>Fill this out like you're texting a friend. Tell me about your fitness, what scares you, and what you love.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> mountainally@gmail.com</p>
+                    <p><i class="fab fa-instagram"></i> @the_mountain_ally</p>
+                </div>
+            </div>
+            <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST" class="custom-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>A little detail</label>
+                    <textarea name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-main full-width">Send Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 The Mountain Ally. Built for Adventure.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
