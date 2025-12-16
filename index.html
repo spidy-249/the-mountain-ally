@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Mountain Ally | Authentic Journeys</title>
@@ -40,6 +41,21 @@
             <a href="#contact" class="btn-main">Start The Conversation</a>
         </div>
     </header>
+
+<section class="section bg-offwhite">
+    <div class="container split-screen">
+        <div class="about-img-container">
+            <div class="about-img" style="background-image: url('https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+        </div>
+        <div class="text-content">
+            <span class="tag" style="background:var(--accent); color:white;">The Founder</span>
+            <h2>Hi, I'm Jyoti.</h2>
+            <p>I'm a student of Mathematics and a student of the mountains. I started <strong>The Mountain Ally</strong> because I saw too many people "conquering" peaks but missing the joy of the journey.</p>
+            <p>I don't just guide you; I trek with you. I handle the logistics so you can handle the experience.</p>
+            <a href="#contact" class="btn-text">Read My Full Story &rarr;</a>
+        </div>
+    </div>
+</section>
 
     <section id="philosophy" class="section">
         <div class="container">
@@ -96,6 +112,37 @@
         </div>
     </section>
 
+    <section id="faq" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Common Questions</h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="faq-grid">
+            <details class="faq-item">
+                <summary>I've never trekked before. Can I come?</summary>
+                <p>Absolutely. That's why I'm here. We will pick a route that matches your current fitness level, and I'll help you prepare with a workout plan before we leave.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>What gear do I need to buy?</summary>
+                <p>Less than you think! I will provide a checklist. You mostly need good shoes and warm layers. We can rent sleeping bags and tents if needed.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>How is this different from a tour agency?</summary>
+                <p>Agencies have fixed dates and rigid schedules. We are friends on a trip. If we like a village, we stay an extra day. If you want to stop for photos, we stop. It's your adventure.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Is it safe for solo female travelers?</summary>
+                <p>Safety is the priority. We use only trusted homestays and verified routes. Since I customize every trip, we can discuss specific safety concerns you might have during planning.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
     <section id="journal" class="section">
         <div class="container">
             <div class="section-header">
@@ -122,9 +169,20 @@
                 <h2>Let's Plan Your Escape</h2>
                 <p>Fill this out like you're texting a friend. Tell me about your fitness, what scares you, and what you love.</p>
                 <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> mountainally@gmail.com</p>
-                    <p><i class="fab fa-instagram"></i> @the_mountain_ally</p>
-                </div>
+                     <p>
+                        <i class="fas fa-envelope"></i> 
+                        <a href="mailto:themountainally@gmail.com" style="color: inherit; text-decoration: none;">
+                             themountainally@gmail.com
+                        </a>
+                     </p>
+
+                  <p>
+                          <i class="fab fa-instagram"></i> 
+                         <a href="https://www.instagram.com/the_mountain_ally" target="_blank" style="color: inherit; text-decoration: none;">
+                           @the_mountain_ally
+                   </a>
+                      </p>
+                 </div>
             </div>
             <form name="contact" method="POST" data-netlify="true" class="custom-form">
     <input type="hidden" name="form-name" value="contact">
@@ -138,7 +196,7 @@
         <input type="email" name="email" required placeholder="your@email.com">
     </div>
     <div class="form-group">
-        <label>Dream Trip Details</label>
+        <label>Little Details</label>
         <textarea name="message" rows="5" required placeholder="Tell me about your plans..."></textarea>
     </div>
     <button type="submit" class="btn-main full-width">Send Request</button>
@@ -151,7 +209,9 @@
     </footer>
 
     <script src="script.js"></script>
-
+<a href="https://wa.me/916295328711?text=Hey,%20I%20want%20to%20know%20more%20about%20a%20trip" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
     <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {

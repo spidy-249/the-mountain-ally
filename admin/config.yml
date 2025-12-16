@@ -6,6 +6,7 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
+  # COLLECTION 1: The Journal (Blogs)
   - name: "blog"
     label: "Journal"
     folder: "_posts/blog"
@@ -15,4 +16,18 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Cover Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  # COLLECTION 2: The Trips (This is what was missing)
+  - name: "trips"
+    label: "Trips"
+    folder: "_posts/trips"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "trip"}
+      - {label: "Trip Name", name: "title", widget: "string"}
+      - {label: "Difficulty", name: "difficulty", widget: "select", options: ["Easy", "Moderate", "Hard"]}
+      - {label: "Duration", name: "duration", widget: "string"}
+      - {label: "Trip Image", name: "image", widget: "image", required: false}
+      - {label: "Itinerary Details", name: "body", widget: "markdown"}
